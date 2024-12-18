@@ -28,16 +28,16 @@ class Employee:
                 print(name)
 
 
-# Clasa Manager care moștenește din Employee
+# Clasa Manager care mosteneste din Employee
 class Manager(Employee):
-    mgr_count = 0  # Variabilă de clasă pentru Manageri
+    mgr_count = 0
 
     def __init__(self, name, salary, department):
         super().__init__(name, salary)
-        self.department = f"Team_Cirlan_{department}"  # Prefixăm departamentul
+        self.department = f"Team_F34_{department}"
         Manager.mgr_count += 1
 
-    # Suprascrierea metodei display_employee
+    # Suprascriu metoda display_employee
     def display_employee(self):
         if X % 3 == 0:
             print(f"Name: {self.name}")
@@ -47,33 +47,33 @@ class Manager(Employee):
             print(f"Department: {self.department}")
 
 
-# Calculăm valorile X și Y
+# Valorile X și Y
 nume = "Cirlan"
 prenume = "Alexandra"
-X = len(nume)  # 6 litere
-Y = len(prenume)  # 9 litere
+X = len(nume)
+Y = len(prenume)
 
-# Numărul de obiecte Manager: Y / 3
+# Nr de obiecte Manager: Y / 3
 num_managers = Y // 3
 
-# Creăm obiecte din clasa Manager
+# Creez 3 obiecte din clasa Manager
 manager1 = Manager("John Doe", 5000, "Development")
 manager2 = Manager("Jane Smith", 6000, "Marketing")
 manager3 = Manager("Bob Brown", 5500, "Operations")
 
-# Creăm un obiect din clasa Employee
+# Creez 1 obiect din clasa Employee
 employee1 = Employee("Alice White", 4000)
 
-# Apelăm metoda display_employee pentru Manageri
+# Apelez metoda display_employee pentru Manageri
 print("Displaying Managers:")
 manager1.display_employee()
 manager2.display_employee()
 manager3.display_employee()
 
-# Apelăm metoda display_employee pentru Employee
+# Apelez metoda display_employee pentru Employee
 print("\nDisplaying Employee:")
 employee1.display_employee()
 
-# Afișăm valorile empCount și mgr_count
+# Afisez valorile empCount și mgr_count
 print(f"\nTotal Employees: {Employee.empCount}")
 print(f"Total Managers: {Manager.mgr_count}")
