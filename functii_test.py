@@ -2,7 +2,7 @@ from Tema1 import Employee, Manager
 
 class TestEmployeeManager:
     def setup_method(self):
-        # Resetăm variabilele de clasă înainte de fiecare test
+        # Ressetez variabilele inainte de fiecare test
         Employee.empCount = 0
         Manager.mgr_count = 0
 
@@ -16,7 +16,7 @@ class TestEmployeeManager:
         mgr = Manager("John Doe", 5000, "Development")
         assert mgr.name == "John Doe"
         assert mgr.salary == 5000
-        assert mgr.department == "Team_Cirlan_Development"
+        assert mgr.department == "Team_F34_Development"
         assert Manager.mgr_count == 1
 
     def test_employee_count(self):
