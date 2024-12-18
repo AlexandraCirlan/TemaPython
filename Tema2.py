@@ -1,14 +1,14 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 
-# Citim datele
+# Citesc datele
 try:
     data = pd.read_csv("data.csv")
 except FileNotFoundError:
     print("Eroare: Fișierul 'data.csv' nu a fost găsit.")
     exit()
 
-# Funcție pentru toate valorile
+# Functia pt toate valorile
 def plot_all_values():
     plt.figure(figsize=(10, 6))
     plt.plot(data['Durata'], label="Durata", marker='o')
@@ -20,9 +20,9 @@ def plot_all_values():
     plt.grid()
     plt.show()
 
-# Funcție pentru primele X valori (X = 6)
+# Functia pt primele X valori
 def plot_first_x_values():
-    x = 6  # Valoare fixă pentru X
+    x = 6
     plt.figure(figsize=(10, 6))
     plt.plot(data['Durata'][:x], label="Durata", marker='o')
     plt.plot(data['Puls'][:x], label="Puls", marker='x')
@@ -33,9 +33,9 @@ def plot_first_x_values():
     plt.grid()
     plt.show()
 
-# Funcție pentru ultimele Y valori (Y = 9)
+# Functia pt ultimele Y valori
 def plot_last_y_values():
-    y = 9  # Valoare fixă pentru Y
+    y = 9 
     plt.figure(figsize=(10, 6))
     plt.plot(data['Durata'][-y:], label="Durata", marker='o')
     plt.plot(data['Puls'][-y:], label="Puls", marker='x')
@@ -46,7 +46,7 @@ def plot_last_y_values():
     plt.grid()
     plt.show()
 
-# Meniu în consolă
+# Meniu
 while True:
     print("\nAlege opțiunea:")
     print("1. Toate valorile")
