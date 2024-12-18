@@ -57,12 +57,12 @@ Y = len(prenume)
 num_managers = Y // 3
 
 # Creez 3 obiecte din clasa Manager
-manager1 = Manager("John Doe", 5000, "Development")
-manager2 = Manager("Jane Smith", 6000, "Marketing")
-manager3 = Manager("Bob Brown", 5500, "Operations")
+manager1 = Manager("Alexandra Cirlan", 5000, "Development")
+manager2 = Manager("Ana Popescu", 8000, "Marketing")
+manager3 = Manager("Vlad Mihai", 5500, "Operations")
 
 # Creez 1 obiect din clasa Employee
-employee1 = Employee("Alice White", 4000)
+employee1 = Employee("Andreea Ion", 4000)
 
 # Apelez metoda display_employee pentru Manageri
 print("Displaying Managers:")
